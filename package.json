@@ -8,7 +8,7 @@
     "build": "vitepress build",
     "preview": "vitepress preview",
     "docs:dev": "vitepress dev",
-    "docs:build": "./node_modules/.bin/vitepress build",
+    "docs:build": "npx vitepress build",
     "docs:preview": "vitepress preview",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

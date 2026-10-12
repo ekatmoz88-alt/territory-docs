@@ -1,0 +1,1 @@
+import{_ as a,o as r,c as o,a0 as t}from"./chunks/framework.DqMqoJl9.js";const p=JSON.parse('{"title":"Territory Docs","description":"","frontmatter":{},"headers":[],"relativePath":"index.md","filePath":"index.md"}'),i={name:"index.md"};function c(d,e,l,s,n,_){return r(),o("div",null,[...e[0]||(e[0]=[t("",7)])])}const u=a(i,[["render",c]]);export{p as __pageData,u as default};

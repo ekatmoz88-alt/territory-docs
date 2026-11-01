@@ -1,8 +1,8 @@
 export default {
   title: 'Territory Docs',
-  description: 'Документация по системе УММС',
-  base: '/',
-  
+  description: 'Документация по системе паспортного учёта «Территория»',
+  base: '/territory-docs/',
+
   themeConfig: {
     nav: [
       { text: 'Главная', link: '/' },
@@ -10,7 +10,7 @@ export default {
       { text: 'Исходный код', link: '/source-code/' },
       { text: 'API', link: '/api/' }
     ],
-    
+
     sidebar: {
       '/': [
         { text: 'Введение', link: '/' },

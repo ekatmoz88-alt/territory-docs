@@ -1,4 +1,5 @@
 export default {
+  lang: 'ru-RU',
   title: 'Territory Docs',
   description: 'Документация по системе паспортного учёта «Территория»',
   base: '/territory-docs/',

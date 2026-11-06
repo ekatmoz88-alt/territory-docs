@@ -8,6 +8,7 @@ export default {
     nav: [
       { text: 'Главная', link: '/' },
       { text: 'База данных', link: '/database/' },
+      { text: 'Физическая структура', link: '/database/physical-structure-specification' },
       { text: 'Исходный код', link: '/source-code/' },
       { text: 'API', link: '/api/' }
     ],
@@ -18,6 +19,7 @@ export default {
         items: [
           { text: 'Обзор', link: '/' },
           { text: 'База данных и модели', link: '/database/' },
+          { text: 'Физическая структура БД (2014)', link: '/database/physical-structure-specification' },
           { text: 'Исходный код и модели', link: '/source-code/' },
           { text: 'API и операции', link: '/api/' }
         ]

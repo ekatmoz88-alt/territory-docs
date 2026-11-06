@@ -1,8 +1,8 @@
-# Territory Docs
+# Passport Account System Documentation
 
 > **📘 Documentation website:** [Open Territory Docs](https://ekatmoz88-alt.github.io/territory-docs/)
 
-Документация системы паспортного учёта «Территория».
+Документация системы паспортного учёта «Паспорт» (репозиторий `territory-docs`). Этот проект является отдельной системой и не должен смешиваться с ППО «Территория» из `ppo-territory-archive` или с АРМ «Дискриптор» из `descriptor-arm-spec`.
 
 ## Разделы документации
 

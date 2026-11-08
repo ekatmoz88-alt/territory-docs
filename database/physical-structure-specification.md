@@ -213,7 +213,7 @@
 - `CitizenshipBaseQuestionnaire`, `CitizenshipAcquisitionQuestionnaire`, `CitizenshipAdjustmentQuestionnaire` — базовые и специализированные анкеты, сведения о прежнем гражданстве, поездках, доходах, родственниках, занятости, образовании, владении русским языком и других обстоятельствах, указанных в исходнике.
 - `CitizenshipCase`, `CitizenshipChildGeneralApplication`, `CitizenshipEvaluationApplication` — дела и заявления, включая связи между делом родителя и делами детей.
 - `CitizenshipDecision`, `CitizenshipAppeal` — решения по делу и их обжалование.
-- `CitizenshipCoordinationRequest` — запросы на согласование материалов с исполнительного органа, даты отправки и ответа, решение и мнение инспектора.
+- `CitizenshipCoordinationRequest` — запросы на согласование материалов с исполнительным органом, даты отправки и ответа, решение и мнение инспектора.
 - `CitizenshipAttachedDocument` — перечень документов, приложенных к делу.
 - `CitizenshipForeignVisit`, `CitizenshipIncomeSource`, `CitizenshipRelative` — сведения о поездках, источниках дохода и родственниках заявителя.
 

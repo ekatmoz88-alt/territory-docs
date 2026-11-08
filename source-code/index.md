@@ -34,7 +34,7 @@
 | `UmmsCaseModel` | `CORE_CASE`, `CORE_PERSON_CASE` | Дело + связь лица с делом |
 | `UmmsAddressModel` | `CORE_ADDRESS`, `CORE_PERSON_ADDRESS` | Адрес + привязка адреса к лицу |
 | `CountryModel` | `DICT_COUNTRY` | Справочник стран |
-| `UmmsOrgModel` | `CORE_ORGANIZATION` | Организации/УФМС |
+| `UmmsOrgModel` | `CORE_ORGANIZATION` | Организации/исполнительные подразделения |
 | `UmmsPaymentModel` | `CORE_PAYMENT` | Платежи |
 
 ### Common.Data.Providers → Запросы к БД

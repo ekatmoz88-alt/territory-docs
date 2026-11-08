@@ -1,7 +1,7 @@
 export default {
   lang: 'ru-RU',
-  title: 'Territory Docs',
-  description: 'Техническая документация ППО «Территория»',
+  title: 'PPO ID Docs',
+  description: 'Техническая документация ППО ID Docs',
   base: '/territory-docs/',
 
   themeConfig: {
@@ -33,7 +33,7 @@ export default {
     },
 
     footer: {
-      message: 'Territory Docs · Technical Documentation',
+      message: 'PPO ID Docs · Technical Documentation',
       copyright: 'Source-based documentation'
     }
   }

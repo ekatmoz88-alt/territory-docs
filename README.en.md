@@ -18,7 +18,7 @@ This repository provides a supplementary documentation set for PPO Territory and
 
 ## Evidence and limitations
 
-The materials combine project documentation and inspected source-code excerpts. API operations and field mappings should be treated as documentation-level analysis unless independently confirmed by an executable service or test evidence. The Oracle inventory reports 401 tables; a separate 2014 physical-structure document contains 381 numbered entries, which is a different source and should not be conflated with the 401-table inventory.
+The materials combine project documentation and inspected source-code excerpts. API operations and field mappings should be treated as documentation-level analysis unless independently confirmed by an executable service or test evidence. The Oracle inventory reports 401 tables; a separate [YEAR] physical-structure document contains 381 numbered entries, which is a different source and should not be conflated with the 401-table inventory.
 
 ## Tags
 

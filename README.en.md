@@ -1,14 +1,14 @@
-# PPO Territory — Database, API and Source-Code Documentation
+# PPO ID Docs — Database, API and Source-Code Documentation
 
 [English](README.en.md) | [Русский](README.md)
 
 **Documentation website:** https://ekatmoz88-alt.github.io/territory-docs/
 
-Supplementary technical documentation for PPO Territory, focused on the Oracle information database, domain modules, source-code structure and API materials.
+Supplementary technical documentation for PPO ID Docs, focused on the Oracle information database, domain modules, source-code structure and API materials.
 
 ## Project boundary
 
-This repository provides a supplementary documentation set for PPO Territory and complements the [PPO Territory technical archive](https://github.com/ekatmoz88-alt/ppo-territory-archive). Passport and migration accounting are documented as functional domains within PPO Territory, not as separate products. ARM Descriptor is a separate documentation subject.
+This repository provides a supplementary documentation set for PPO ID Docs. Passport and migration accounting are documented as functional domains within the documented system, not as separate products. ARM Descriptor is a separate documentation subject.
 
 ## Documentation sections
 
@@ -22,4 +22,4 @@ The materials combine project documentation and inspected source-code excerpts. 
 
 ## Tags
 
-`ppo-territory` · `oracle` · `database-documentation` · `api-documentation` · `source-code-analysis`
+`ppo-id-docs` · `oracle` · `database-documentation` · `api-documentation` · `source-code-analysis`

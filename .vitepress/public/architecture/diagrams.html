@@ -62,13 +62,11 @@ flowchart LR
   DB[("Oracle information database")]
   SERVICE_A["Service participant A"]
   SERVICE_B["Service participant B"]
-  USB["Umms.UsbExchange"]
-  DICT["Dictionary synchronization"]
+  USB["Umms.UsbExchange — documented module role"]
+  DICT["Dictionary synchronization — documented scenario"]
 
   MS -->|"Direct SQL calls — documented"| DB
   SERVICE_A ---|"JSON format documented; participants and direction unspecified"| SERVICE_B
-  USB["Umms.UsbExchange — documented module role"]
-  DICT["Dictionary synchronization — documented scenario"]
 </pre>
 </div>
 <span class="status">Подтверждено исходными материалами: прямые SQL-запросы АРМ МС</span>

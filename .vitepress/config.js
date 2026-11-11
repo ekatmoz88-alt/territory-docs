@@ -23,7 +23,7 @@ export default {
           { text: 'Архитектура системы', link: '/architecture/' },
           { text: 'База данных и модели', link: '/database/' },
           { text: 'Логическая модель', link: '/database/logical-structure-model' },
-          { text: 'Физическая структура БД ([YEAR])', link: '/database/physical-structure-specification' },
+          { text: 'Физическая структура БД (381 позиция)', link: '/database/physical-structure-specification' },
           { text: 'Исходный код и модели', link: '/source-code/' },
           { text: 'API и операции', link: '/api/' }
         ]

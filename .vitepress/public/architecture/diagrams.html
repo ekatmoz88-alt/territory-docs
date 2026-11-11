@@ -88,7 +88,6 @@ flowchart TB
     USB["Umms.UsbExchange — USB exchange for ARM MS"]
   end
   NOTE["Exact dependency graph, process boundaries and deployment are not established"]
-  COMPONENTS --- NOTE
 </pre>
 </div>
 <span class="status">Подтверждено исходными материалами: имена проектов и описанные роли</span>
@@ -104,13 +103,13 @@ flowchart LR
   MODEL["Application model"]
   PROVIDER["Common.Data provider"]
   TABLE["Oracle table mapping"]
-  OP -->|"Field mapping described"| MODEL
-  MODEL -.->|"Logical association"| PROVIDER
-  PROVIDER -->|"Table mapping described"| TABLE
+  OP -->|"JSON field-to-table mapping described"| TABLE
+  MODEL -->|"Model-to-table mapping described"| TABLE
+  PROVIDER -->|"Provider table usage described"| TABLE
 </pre>
 </div>
-<span class="status">Подтверждено исходными материалами: таблицы сопоставления полей и моделей</span>
-<span class="status">Логическая реконструкция: единая последовательность прослеживаемости</span>
+<span class="status">Подтверждено исходными материалами: отдельные таблицы соответствий</span>
+<span class="status">Логическая реконструкция: объединённая карта прослеживаемости</span>
 <span class="status">Требует дополнительной проверки: runtime route and execution</span>
 </section>
 

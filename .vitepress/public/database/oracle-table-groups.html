@@ -23,7 +23,7 @@ window.addEventListener('DOMContentLoaded',()=>mermaid.run({querySelector:'.merm
 <h1>Oracle Database Table Groups Overview</h1>
 <p>ППО ID Docs · Инвентаризация, приведённая в существующих технических материалах репозитория.</p>
 <div class="panel">
-<div class="diagram"><pre class="mermaid">
+<div class="diagram"><pre class="mermaid" aria-label="Diagram showing documented Oracle table group counts">
 flowchart TB
   DB[("Oracle information database<br/>401 tables in documented inventory")]
   subgraph GROUPS["Table-group classification only — not table relationships"]
@@ -44,6 +44,9 @@ flowchart TB
   DB -.->|"classification only"| MIG
   DB -.->|"classification only"| OTHER
 </pre></div>
+<div class="note">
+<strong>Статус данных:</strong> числа воспроизводят инвентаризацию в доступных материалах; сверка с исходным каталогом Oracle не выполнена.
+</div>
 <div class="note">
 <strong>Семантика:</strong> пунктирные стрелки обозначают только классификацию таблиц по группам. Они не обозначают внешние ключи, связи между таблицами, зависимости компонентов или потоки данных.
 </div>

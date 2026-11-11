@@ -4,11 +4,7 @@
 
 **Documentation website:** https://ekatmoz88-alt.github.io/territory-docs/
 
-**Portfolio grouping:** Territory / Rexoft. The available technical materials identify the system as PPO ID Docs.
-
 This repository contains technical documentation for PPO ID Docs, covering its Oracle information database, domain modules, source-code structure, API materials and documented relationships between them.
-
-**System boundary:** FMS PPO Territory is a separate system documented in [ppo-territory-archive](https://github.com/ekatmoz88-alt/ppo-territory-archive). The two systems, their databases and integrations are not combined.
 
 ## Documentation sections
 
@@ -34,4 +30,4 @@ The database inventory reports 401 tables. A separate physical-structure documen
 
 ## Tags
 
-`ppo-id-docs` · `territory-rexoft-portfolio` · `oracle` · `database-documentation` · `system-architecture` · `api-documentation` · `docs-as-code`
+`ppo-id-docs` · `oracle` · `database-documentation` · `system-architecture` · `api-documentation` · `docs-as-code`

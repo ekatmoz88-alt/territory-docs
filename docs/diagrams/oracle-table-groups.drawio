@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mxfile host="app.diagrams.net" modified="2026-11-11T13:00:00.000Z" agent="ChatGPT" version="24.7.17" type="device">
+  <diagram id="oracle-table-groups" name="Oracle Table Groups">
+    <mxGraphModel dx="1600" dy="920" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="920" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="Oracle Database — Table Groups Overview" style="text;html=1;fontSize=26;fontStyle=1;fontColor=#17324d;" vertex="1" parent="1">
+          <mxGeometry x="450" y="25" width="700" height="48" as="geometry"/>
+        </mxCell>
+        <mxCell id="subtitle" value="401 таблица · классификация по документированной инвентаризации" style="text;html=1;fontSize=15;fontColor=#526579;" vertex="1" parent="1">
+          <mxGeometry x="450" y="78" width="700" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="db" value="&lt;b&gt;Oracle information database&lt;/b&gt;&lt;br&gt;401 tables" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;shape=cylinder3;boundedLbl=1;backgroundOutline=1;fillColor=#eaf3fb;strokeColor=#4f81a8;fontSize=19;fontColor=#17324d;" vertex="1" parent="1">
+          <mxGeometry x="650" y="145" width="300" height="85" as="geometry"/>
+        </mxCell>
+        <mxCell id="CORE" value="&lt;b&gt;CORE_*&lt;/b&gt;&lt;br&gt;44 таблицы" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fillColor=#e8f1fb;strokeColor=#477aa8;fontSize=20;fontColor=#24364b;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="140" y="330" width="245" height="105" as="geometry"/>
+        </mxCell>
+        <mxCell id="edge_CORE" value="classification only" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeColor=#718096;strokeWidth=2;dashed=1;dashPattern=6 4;fontSize=13;fontColor=#475569;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="db" target="CORE">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="DICT" value="&lt;b&gt;DICT_*&lt;/b&gt;&lt;br&gt;104 таблицы" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fillColor=#e9f5ef;strokeColor=#4d8b6b;fontSize=20;fontColor=#24364b;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="510" y="330" width="245" height="105" as="geometry"/>
+        </mxCell>
+        <mxCell id="edge_DICT" value="classification only" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeColor=#718096;strokeWidth=2;dashed=1;dashPattern=6 4;fontSize=13;fontColor=#475569;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="db" target="DICT">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="RP" value="&lt;b&gt;RP_*&lt;/b&gt;&lt;br&gt;11 таблиц" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fillColor=#fff4df;strokeColor=#b98532;fontSize=20;fontColor=#24364b;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="880" y="330" width="245" height="105" as="geometry"/>
+        </mxCell>
+        <mxCell id="edge_RP" value="classification only" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeColor=#718096;strokeWidth=2;dashed=1;dashPattern=6 4;fontSize=13;fontColor=#475569;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="db" target="RP">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="FP" value="&lt;b&gt;FP_*&lt;/b&gt;&lt;br&gt;10 таблиц" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fillColor=#f4edfb;strokeColor=#8865a8;fontSize=20;fontColor=#24364b;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1250" y="330" width="245" height="105" as="geometry"/>
+        </mxCell>
+        <mxCell id="edge_FP" value="classification only" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeColor=#718096;strokeWidth=2;dashed=1;dashPattern=6 4;fontSize=13;fontColor=#475569;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="db" target="FP">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="REG" value="&lt;b&gt;REG_*&lt;/b&gt;&lt;br&gt;17 таблиц" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fillColor=#e9f5f5;strokeColor=#4c8c8b;fontSize=20;fontColor=#24364b;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="325" y="545" width="245" height="105" as="geometry"/>
+        </mxCell>
+        <mxCell id="edge_REG" value="classification only" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeColor=#718096;strokeWidth=2;dashed=1;dashPattern=6 4;fontSize=13;fontColor=#475569;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="db" target="REG">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="MIG" value="&lt;b&gt;MIG_*&lt;/b&gt;&lt;br&gt;8 таблиц" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fillColor=#fceeed;strokeColor=#b86a61;fontSize=20;fontColor=#24364b;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="695" y="545" width="245" height="105" as="geometry"/>
+        </mxCell>
+        <mxCell id="edge_MIG" value="classification only" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeColor=#718096;strokeWidth=2;dashed=1;dashPattern=6 4;fontSize=13;fontColor=#475569;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="db" target="MIG">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="OTHER" value="&lt;b&gt;Other groups&lt;/b&gt;&lt;br&gt;207 таблиц" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fillColor=#f0f2f5;strokeColor=#697789;fontSize=20;fontColor=#24364b;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="1065" y="545" width="245" height="105" as="geometry"/>
+        </mxCell>
+        <mxCell id="edge_OTHER" value="classification only" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;strokeColor=#718096;strokeWidth=2;dashed=1;dashPattern=6 4;fontSize=13;fontColor=#475569;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="db" target="OTHER">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="note" value="&lt;b&gt;Семантика:&lt;/b&gt; пунктирные линии показывают только классификацию по группам.&lt;br&gt;Они НЕ обозначают FK, связи между таблицами или потоки данных." style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fillColor=#fff8e8;strokeColor=#d7ad58;fontSize=15;fontColor=#654b1b;" vertex="1" parent="1">
+          <mxGeometry x="260" y="715" width="1080" height="82" as="geometry"/>
+        </mxCell>
+        <mxCell id="sum" value="44 + 104 + 11 + 10 + 17 + 8 + 207 = &lt;b&gt;401&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#7b5b24&quot;&gt;Арифметическая сумма сходится; фактическое распределение требует сверки с каталогом Oracle.&lt;/font&gt;" style="text;html=1;fontSize=15;fontColor=#34495e;" vertex="1" parent="1">
+          <mxGeometry x="360" y="825" width="880" height="55" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

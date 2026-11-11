@@ -7,6 +7,7 @@ export default {
   themeConfig: {
     nav: [
       { text: 'Главная', link: '/' },
+      { text: 'Архитектура', link: '/architecture/' },
       { text: 'База данных', link: '/database/' },
       { text: 'Логическая модель', link: '/database/logical-structure-model' },
       { text: 'Физическая структура БД', link: '/database/physical-structure-specification' },
@@ -19,6 +20,7 @@ export default {
         text: 'Документация системы',
         items: [
           { text: 'Обзор', link: '/' },
+          { text: 'Архитектура системы', link: '/architecture/' },
           { text: 'База данных и модели', link: '/database/' },
           { text: 'Логическая модель', link: '/database/logical-structure-model' },
           { text: 'Физическая структура БД ([YEAR])', link: '/database/physical-structure-specification' },

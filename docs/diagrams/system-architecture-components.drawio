@@ -47,7 +47,7 @@
         <mxCell id="svcB" value="&lt;b&gt;Участник сервиса B&lt;/b&gt;&lt;br&gt;Конкретный компонент не указан" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fillColor=#f4edfb;strokeColor=#8865a8;fontSize=14;fontColor=#20364d;" vertex="1" parent="1">
           <mxGeometry x="1300" y="615" width="210" height="70" as="geometry"/>
         </mxCell>
-        <mxCell id="json" value="JSON-формат обмена документирован; участники не идентифицированы" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;startArrow=block;startFill=1;endArrow=block;endFill=1;strokeColor=#64748b;strokeWidth=2;dashed=1;dashPattern=6 4;fontSize=12;fontColor=#475569;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="svcA" target="svcB">
+        <mxCell id="json" value="JSON-формат обмена документирован; участники и направление не идентифицированы" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;startFill=0;endArrow=none;endFill=0;strokeColor=#64748b;strokeWidth=2;dashed=1;dashPattern=6 4;fontSize=12;fontColor=#475569;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="svcA" target="svcB">
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
         <mxCell id="usbrole" value="&lt;b&gt;Umms.UsbExchange&lt;/b&gt;&lt;br&gt;Роль: USB-обмен для АРМ МС" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fillColor=#eaf3fb;strokeColor=#4f81a8;fontSize=15;fontColor=#20364d;" vertex="1" parent="1">
@@ -56,7 +56,7 @@
         <mxCell id="dictsync" value="&lt;b&gt;Синхронизация справочников&lt;/b&gt;&lt;br&gt;Сценарий описан; точные endpoints не установлены" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fillColor=#e9f5ef;strokeColor=#4d8b6b;fontSize=15;fontColor=#20364d;" vertex="1" parent="1">
           <mxGeometry x="610" y="700" width="440" height="75" as="geometry"/>
         </mxCell>
-        <mxCell id="usb_dict" value="Роль модуля документирована" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#64748b;strokeWidth=2;dashed=1;dashPattern=6 4;fontSize=12;fontColor=#475569;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="usbrole" target="dictsync">
+        <mxCell id="usb_dict" value="Роль модуля и сценарий синхронизации описаны; точная связь не установлена" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;startFill=0;endArrow=none;endFill=0;strokeColor=#64748b;strokeWidth=2;dashed=1;dashPattern=6 4;fontSize=12;fontColor=#475569;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="usbrole" target="dictsync">
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
         <mxCell id="legend" value="&lt;b&gt;Статусы:&lt;/b&gt; сплошная стрелка — взаимодействие прямо описано в материалах; пунктир — документированная роль/формат без подтверждённого графа вызовов.&lt;br&gt;&lt;b&gt;Не показано:&lt;/b&gt; runtime-маршруты, точные зависимости проектов, физическая топология и deployment." style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fillColor=#f4f6f8;strokeColor=#aab7c4;fontSize=13;fontColor=#34495e;" vertex="1" parent="1">

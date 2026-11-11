@@ -66,14 +66,15 @@ flowchart LR
   DICT["Dictionary synchronization"]
 
   MS -->|"Direct SQL calls — documented"| DB
-  SERVICE_A <-->|"JSON format documented; participants unspecified"| SERVICE_B
-  USB -.->|"Module role documented"| DICT
+  SERVICE_A ---|"JSON format documented; participants and direction unspecified"| SERVICE_B
+  USB["Umms.UsbExchange — documented module role"]
+  DICT["Dictionary synchronization — documented scenario"]
 </pre>
 </div>
 <span class="status">Подтверждено исходными материалами: прямые SQL-запросы АРМ МС</span>
 <span class="status">Подтверждено исходными материалами: JSON между сервисами</span>
 <span class="status">Логическая реконструкция: участники обмена не идентифицированы</span>
-<p>Схема намеренно не соединяет клиентские рабочие места с конкретными сервисами: доступные материалы не устанавливают полный граф вызовов.</p>
+<p>Схема намеренно не задаёт направление JSON-обмена и не соединяет клиентские рабочие места с конкретными сервисами: доступные материалы не устанавливают участников, направление и полный граф вызовов. Роль USB-модуля и сценарий синхронизации показаны раздельно, без неподтверждённой стрелки вызова.</p>
 </section>
 
 <section>

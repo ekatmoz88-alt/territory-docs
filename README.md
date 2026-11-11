@@ -3,12 +3,8 @@
 [English](README.en.md) | [Русский](README.md)
 
 > **📘 Documentation website:** [Открыть ППО ID Docs](https://ekatmoz88-alt.github.io/territory-docs/)
->
-> **Портфолио-группировка:** Territory / Rexoft. В доступных технических материалах система обозначена как ППО ID Docs.
 
 Репозиторий содержит техническую документацию по информационной базе и прикладным компонентам ППО ID Docs: модели Oracle, предметные модули паспортного и миграционного учёта, исходный код, API и связи между ними.
-
-**Граница проекта:** ППО «Территория» ФМС — отдельная система, документируемая в [ppo-territory-archive](https://github.com/ekatmoz88-alt/ppo-territory-archive). Материалы двух систем, их базы данных и интеграции не объединяются.
 
 ## Разделы документации
 
@@ -34,4 +30,4 @@
 
 ## Tags
 
-`ppo-id-docs` · `territory-rexoft-portfolio` · `oracle` · `database-documentation` · `system-architecture` · `api-documentation` · `docs-as-code`
+`ppo-id-docs` · `oracle` · `database-documentation` · `system-architecture` · `api-documentation` · `docs-as-code`

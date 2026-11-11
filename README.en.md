@@ -1,25 +1,37 @@
-# PPO ID Docs — Database, API and Source-Code Documentation
+# PPO ID Docs — Architecture, Database, API and Source-Code Documentation
 
 [English](README.en.md) | [Русский](README.md)
 
 **Documentation website:** https://ekatmoz88-alt.github.io/territory-docs/
 
-Supplementary technical documentation for PPO ID Docs, focused on the Oracle information database, domain modules, source-code structure and API materials.
+**Portfolio grouping:** Territory / Rexoft. The available technical materials identify the system as PPO ID Docs.
 
-## Project boundary
+This repository contains technical documentation for PPO ID Docs, covering its Oracle information database, domain modules, source-code structure, API materials and documented relationships between them.
 
-This repository provides a supplementary documentation set for PPO ID Docs. Passport and migration accounting are documented as functional domains within the documented system, not as separate products. ARM Descriptor is a separate documentation subject.
+**System boundary:** FMS PPO Territory is a separate system documented in [ppo-territory-archive](https://github.com/ekatmoz88-alt/ppo-territory-archive). The two systems, their databases and integrations are not combined.
 
 ## Documentation sections
 
-- [Database and data models](./database/index.md) — Oracle structure, CORE and DICT groups, domain modules, relationships and ER views.
-- [Source code and models](./source-code/index.md) — project structure, software modules and code-to-database model mapping.
+- [Architecture overview](./architecture/) — context, software components, Oracle data model, API/model/database traceability and evidence status.
+- [Database and data models](./database/index.md) — Oracle structure, CORE and DICT groups, domain modules, relationships and ER materials.
+- [Source code and models](./source-code/index.md) — project structure, software components and code-to-database model mapping.
 - [API operations](./api/index.md) — JSON operations, request fields, database mappings, validation and rollback behavior.
+
+## Technology and documentation approach
+
+- Oracle Database
+- C# / .NET project structure
+- SQL and JSON
+- Markdown and VitePress
+- Git, GitHub Actions and GitHub Pages
+- Mermaid architecture diagrams
 
 ## Evidence and limitations
 
-The materials combine project documentation and inspected source-code excerpts. API operations and field mappings should be treated as documentation-level analysis unless independently confirmed by an executable service or test evidence. The Oracle inventory reports 401 tables; a separate [YEAR] physical-structure document contains 381 numbered entries, which is a different source and should not be conflated with the 401-table inventory.
+The materials are based on available project documentation and selected source-code excerpts. Architecture views distinguish source-confirmed facts, logical reconstruction and items requiring further verification. They are not verified production deployment diagrams. API descriptions and field mappings do not prove that a live runtime endpoint is available or that an operation has been executed successfully.
+
+The database inventory reports 401 tables. A separate physical-structure document contains 381 numbered entries; these figures belong to different documentary sources and are not interchangeable.
 
 ## Tags
 
-`ppo-id-docs` · `oracle` · `database-documentation` · `api-documentation` · `source-code-analysis`
+`ppo-id-docs` · `territory-rexoft-portfolio` · `oracle` · `database-documentation` · `system-architecture` · `api-documentation` · `docs-as-code`

@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Evidence-based Mermaid architecture diagrams for PPO ID Docs.">
+<title>ППО ID Docs — архитектурные схемы</title>
+<style>
+:root{color-scheme:light;font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;color:#17283d;background:#f4f7fb}
+*{box-sizing:border-box}
+body{margin:0;padding:24px;line-height:1.55}
+main{max-width:1120px;margin:0 auto}
+h1{font-size:clamp(24px,4vw,34px);margin:0 0 8px}
+h2{font-size:19px;margin:0 0 12px}
+p{margin:8px 0 14px;color:#4c5c70}
+section{margin:18px 0;padding:20px;background:#fff;border:1px solid #dce4ee;border-radius:10px;overflow:hidden}
+.diagram{overflow-x:auto;padding:12px 4px}
+.mermaid{min-width:600px;text-align:center}
+.status{display:inline-block;margin:4px 5px 4px 0;padding:3px 8px;border:1px solid #cbd8e5;border-radius:5px;font-size:12px;background:#f7f9fc;color:#35465c}
+a{color:#1769aa}
+footer{margin-top:24px;padding-top:16px;border-top:1px solid #dce4ee;font-size:13px;color:#64748b}
+@media(max-width:640px){body{padding:14px}section{padding:15px}.mermaid{min-width:560px}}
+</style>
+<script type="module">
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11.12.3/dist/mermaid.esm.min.mjs';
+mermaid.initialize({
+  startOnLoad:false,
+  securityLevel:'strict',
+  theme:'base',
+  themeVariables:{
+    fontFamily:'Inter, system-ui, sans-serif',
+    primaryColor:'#eaf3fb',
+    primaryTextColor:'#17283d',
+    primaryBorderColor:'#8db7d7',
+    lineColor:'#397da9',
+    secondaryColor:'#f2f6fa',
+    tertiaryColor:'#edf6f1',
+    background:'#ffffff',
+    clusterBkg:'#f5f8fb',
+    clusterBorder:'#cbd8e5',
+    edgeLabelBackground:'#ffffff'
+  },
+  flowchart:{htmlLabels:false,curve:'basis'},
+  er:{layoutDirection:'TB'}
+});
+window.addEventListener('DOMContentLoaded', async () => {
+  await mermaid.run({querySelector:'.mermaid'});
+});
+</script>
+</head>
+<body>
+<main>
+<h1>ППО ID Docs — архитектурные схемы</h1>
+<p>Портфолио-группировка Territory / Rexoft. В доступных технических материалах система обозначена как ППО ID Docs. Схемы показывают документированные сведения отдельно от логических связей и вопросов, требующих проверки.</p>
+
+<section>
+<h2>1. Контекст и границы обмена</h2>
+<div class="diagram">
+<pre class="mermaid">
+flowchart LR
+  MS["ПО МС / АРМ МС"]
+  DB[("Oracle information database")]
+  SERVICE_A["Service participant A"]
+  SERVICE_B["Service participant B"]
+  USB["Umms.UsbExchange — documented module role"]
+  DICT["Dictionary synchronization — documented scenario"]
+
+  MS -->|"Direct SQL calls — documented"| DB
+  SERVICE_A ---|"JSON format documented; participants and direction unspecified"| SERVICE_B
+</pre>
+</div>
+<span class="status">Подтверждено исходными материалами: прямые SQL-запросы АРМ МС</span>
+<span class="status">Подтверждено исходными материалами: JSON между сервисами</span>
+<span class="status">Логическая реконструкция: участники обмена не идентифицированы</span>
+<p>Схема намеренно не задаёт направление JSON-обмена и не соединяет клиентские рабочие места с конкретными сервисами: доступные материалы не устанавливают участников, направление и полный граф вызовов. Роль USB-модуля и сценарий синхронизации показаны раздельно, без неподтверждённой стрелки вызова.</p>
+</section>
+
+<section>
+<h2>2. Компоненты, перечисленные в документации</h2>
+<div class="diagram">
+<pre class="mermaid">
+flowchart TB
+  subgraph COMPONENTS["Documented software components"]
+    DATA["Common.Data — models, providers, data access interfaces"]
+    CORE["Umms.Core — business logic"]
+    SERVICE["Umms.Service — service layer and scenarios"]
+    USB["Umms.UsbExchange — USB exchange for ARM MS"]
+  end
+  NOTE["Exact dependency graph, process boundaries and deployment are not established"]
+</pre>
+</div>
+<span class="status">Подтверждено исходными материалами: имена проектов и описанные роли</span>
+<span class="status">Требует дополнительной проверки: точные зависимости и размещение</span>
+</section>
+
+<section>
+<h2>3. Прослеживаемость операции до Oracle</h2>
+<div class="diagram">
+<pre class="mermaid">
+flowchart LR
+  OP["Documented operation / JSON fields"]
+  MODEL["Application model"]
+  PROVIDER["Common.Data provider"]
+  TABLE["Oracle table mapping"]
+  OP -->|"JSON field-to-table mapping described"| TABLE
+  MODEL -->|"Model-to-table mapping described"| TABLE
+  PROVIDER -->|"Provider table usage described"| TABLE
+</pre>
+</div>
+<span class="status">Подтверждено исходными материалами: отдельные таблицы соответствий</span>
+<span class="status">Логическая реконструкция: объединённая карта прослеживаемости</span>
+<span class="status">Требует дополнительной проверки: runtime route and execution</span>
+</section>
+
+<section>
+<h2>4. Oracle Database Table Groups Overview — 401 таблица</h2>
+<div class="diagram">
+<pre class="mermaid">
+flowchart TB
+  DB[("Oracle information database<br/>401 tables in documented inventory")]
+  subgraph GROUPS["Table-group classification only — not table relationships"]
+    direction LR
+    CORE["CORE_*<br/>44 tables"]
+    DICT["DICT_*<br/>104 tables"]
+    RP["RP_*<br/>11 tables"]
+    FP["FP_*<br/>10 tables"]
+    REG["REG_*<br/>17 tables"]
+    MIG["MIG_*<br/>8 tables"]
+    OTHER["Other groups<br/>207 tables"]
+  end
+  DB -.->|"classification only"| CORE
+  DB -.->|"classification only"| DICT
+  DB -.->|"classification only"| RP
+  DB -.->|"classification only"| FP
+  DB -.->|"classification only"| REG
+  DB -.->|"classification only"| MIG
+  DB -.->|"classification only"| OTHER
+</pre>
+</div>
+<span class="status">Подтверждено исходными материалами: указанные в документации значения групп</span>
+<span class="status">Арифметика подтверждена: сумма значений равна 401</span>
+<span class="status">Требует дополнительной проверки: сверка состава и распределения по каталогу Oracle</span>
+<p><strong>Семантика схемы:</strong> пунктирные стрелки обозначают только классификацию таблиц по группам. Они не обозначают внешние ключи, связи между таблицами, зависимости компонентов или потоки данных.</p>
+<p><strong>Арифметическая проверка:</strong> 44 + 104 + 11 + 10 + 17 + 8 + 207 = 401. Равенство подтверждает внутреннюю согласованность приведённых чисел, но не доказывает, что распределение совпадает с фактическим каталогом Oracle.</p>
+<p>Отдельная физическая спецификация содержит 381 пронумерованную позицию. Это отдельный документальный источник; диаграмма не пытается свести оба числа к одному.</p>
+</section>
+
+<footer>
+<p><a href="./">Вернуться к архитектурному обзору</a> · <a href="../database/">База данных</a> · <a href="../source-code/">Исходный код</a> · <a href="../api/">API</a></p>
+<p>Mermaid runtime is loaded from jsDelivr (Mermaid 11.12.3). If the CDN is unavailable, the source diagrams remain available in this HTML file.</p>
+</footer>
+</main>
+</body>
+</html>

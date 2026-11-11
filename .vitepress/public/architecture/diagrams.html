@@ -114,28 +114,35 @@ flowchart LR
 </section>
 
 <section>
-<h2>4. Oracle inventory — 401 таблица</h2>
+<h2>4. Oracle Database Table Groups Overview — 401 таблица</h2>
 <div class="diagram">
 <pre class="mermaid">
 flowchart TB
-  DB[("Oracle information database — 401 tables")]
-  CORE["CORE_* — 44"]
-  DICT["DICT_* — 104"]
-  RP["RP_* — 11"]
-  FP["FP_* — 10"]
-  REG["REG_* — 17"]
-  MIG["MIG_* — 8"]
-  OTHER["Other groups — 207"]
-  DB --> CORE
-  DB --> DICT
-  DB --> RP
-  DB --> FP
-  DB --> REG
-  DB --> MIG
-  DB --> OTHER
+  DB[("Oracle information database<br/>401 tables in documented inventory")]
+  subgraph GROUPS["Table-group classification only — not table relationships"]
+    direction LR
+    CORE["CORE_*<br/>44 tables"]
+    DICT["DICT_*<br/>104 tables"]
+    RP["RP_*<br/>11 tables"]
+    FP["FP_*<br/>10 tables"]
+    REG["REG_*<br/>17 tables"]
+    MIG["MIG_*<br/>8 tables"]
+    OTHER["Other groups<br/>207 tables"]
+  end
+  DB -.->|"classification only"| CORE
+  DB -.->|"classification only"| DICT
+  DB -.->|"classification only"| RP
+  DB -.->|"classification only"| FP
+  DB -.->|"classification only"| REG
+  DB -.->|"classification only"| MIG
+  DB -.->|"classification only"| OTHER
 </pre>
 </div>
-<span class="status">Подтверждено исходными материалами: Oracle inventory and group counts</span>
+<span class="status">Подтверждено исходными материалами: указанные в документации значения групп</span>
+<span class="status">Арифметика подтверждена: сумма значений равна 401</span>
+<span class="status">Требует дополнительной проверки: сверка состава и распределения по каталогу Oracle</span>
+<p><strong>Семантика схемы:</strong> пунктирные стрелки обозначают только классификацию таблиц по группам. Они не обозначают внешние ключи, связи между таблицами, зависимости компонентов или потоки данных.</p>
+<p><strong>Арифметическая проверка:</strong> 44 + 104 + 11 + 10 + 17 + 8 + 207 = 401. Равенство подтверждает внутреннюю согласованность приведённых чисел, но не доказывает, что распределение совпадает с фактическим каталогом Oracle.</p>
 <p>Отдельная физическая спецификация содержит 381 пронумерованную позицию. Это отдельный документальный источник; диаграмма не пытается свести оба числа к одному.</p>
 </section>
 

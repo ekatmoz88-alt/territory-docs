@@ -53,10 +53,10 @@
         <mxCell id="usbrole" value="&lt;b&gt;Umms.UsbExchange&lt;/b&gt;&lt;br&gt;Роль: USB-обмен для АРМ МС" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fillColor=#eaf3fb;strokeColor=#4f81a8;fontSize=15;fontColor=#20364d;" vertex="1" parent="1">
           <mxGeometry x="100" y="700" width="300" height="75" as="geometry"/>
         </mxCell>
-        <mxCell id="dictsync" value="&lt;b&gt;Синхронизация справочников&lt;/b&gt;&lt;br&gt;Сценарий описан; точные endpoints не установлены" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fillColor=#e9f5ef;strokeColor=#4d8b6b;fontSize=15;fontColor=#20364d;" vertex="1" parent="1">
+        <mxCell id="dictsync" value="&lt;b&gt;Синхронизация справочников&lt;/b&gt;&lt;br&gt;Сценарий относится к реальной системе; каталог точных API-маршрутов приведён отдельно" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fillColor=#e9f5ef;strokeColor=#4d8b6b;fontSize=15;fontColor=#20364d;" vertex="1" parent="1">
           <mxGeometry x="610" y="700" width="440" height="75" as="geometry"/>
         </mxCell>
-                <mxCell id="legend" value="&lt;b&gt;Статусы:&lt;/b&gt; сплошная стрелка — взаимодействие прямо описано в материалах; пунктир — документированная роль/формат без подтверждённого графа вызовов.&lt;br&gt;&lt;b&gt;Не показано:&lt;/b&gt; runtime-маршруты, точные зависимости проектов, физическая топология и deployment." style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fillColor=#f4f6f8;strokeColor=#aab7c4;fontSize=13;fontColor=#34495e;" vertex="1" parent="1">
+                <mxCell id="legend" value="&lt;b&gt;Статусы:&lt;/b&gt; сплошная стрелка — взаимодействие прямо описано в материалах; пунктир — документированная роль/формат без подтверждённого графа вызовов.&lt;br&gt;&lt;b&gt;Не показано на этой схеме:&lt;/b&gt; полный каталог runtime-маршрутов, точные зависимости проектов, физическая топология конкретной установки и параметры deployment." style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fillColor=#f4f6f8;strokeColor=#aab7c4;fontSize=13;fontColor=#34495e;" vertex="1" parent="1">
           <mxGeometry x="190" y="815" width="1220" height="75" as="geometry"/>
         </mxCell>
       </root>

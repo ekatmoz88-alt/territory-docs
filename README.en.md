@@ -24,7 +24,7 @@ This repository contains technical documentation for PPO ID Docs, covering its O
 
 ## Evidence and limitations
 
-The materials are based on available project documentation and selected source-code excerpts. Architecture views distinguish source-confirmed facts, logical reconstruction and items requiring further verification. They are not verified production deployment diagrams. API descriptions and field mappings do not prove that a live runtime endpoint is available or that an operation has been executed successfully.
+PPO ID Docs is a real information system that was deployed and operated in the office server environment. The public documentation is based on project materials, system descriptions, and source code. Architecture views represent the documented system and separately mark logical relationships that cannot be derived directly from the available artefacts. The fact that the office server is not accessible from the author's personal laptop does not mean that real API routes or working operations did not exist.
 
 The database inventory reports 401 tables. A separate physical-structure document contains 381 numbered entries; these figures belong to different documentary sources and are not interchangeable.
 
